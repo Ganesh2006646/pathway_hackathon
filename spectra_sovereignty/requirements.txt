@@ -1,0 +1,16 @@
+# Spectra-Sovereignty: Real-Time Signal AI Agent
+# Python/Pathway-based electromagnetic signal monitoring with LLM agent
+
+# Core dependencies
+pathway>=0.12.0
+python-dotenv>=1.0.0
+litellm>=1.0.0
+
+# Dashboard & Visualization
+streamlit>=1.29.0
+plotly>=5.18.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Testing
+pytest>=7.4.0
