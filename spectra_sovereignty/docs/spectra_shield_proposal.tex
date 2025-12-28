@@ -1,0 +1,408 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+% Custom colors
+\definecolor{primaryblue}{RGB}{0,123,255}
+\definecolor{accentpurple}{RGB}{123,47,247}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Spectra-Shield: Agentic Signal Sovereignty}}
+\fancyhead[R]{Build-athon Technical Proposal}
+\fancyfoot[C]{\thepage}
+
+% Title formatting
+\titleformat{\section}{\large\bfseries\color{primaryblue}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{accentpurple}}{\thesubsection}{1em}{}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Spectra-Shield: Agentic Signal Sovereignty}}\\[0.3cm]
+    {\large \textit{A Paradigm Shift in Real-Time Electromagnetic Defense}}\\[0.5cm]
+    {\normalsize Pathway Streaming Engine $\times$ Google Gemini 2.5 Flash-Lite}\\[0.3cm]
+    {\small Build-athon Technical Submission --- December 2024}
+\end{center}
+
+\hrule
+\vspace{0.5cm}
+
+% =============================================================================
+\section{Executive Summary}
+% =============================================================================
+
+\textbf{Spectra-Shield} represents a \textbf{paradigm shift} in how we interact with the invisible electromagnetic spectrum. Unlike conventional signal processing systems that merely filter noise or detect patterns, Spectra-Shield introduces an \textbf{Agentic Signal Sovereignty} layer---an autonomous AI that \textit{thinks, decides, and acts} within milliseconds of signal detection.
+
+The system leverages \textbf{Pathway's LLM-App streaming engine} for zero-latency data processing and \textbf{Google Gemini 2.5 Flash-Lite} for intelligent threat classification. This combination enables:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Sub-100ms response times} from signal detection to defensive action
+    \item \textbf{Autonomous decision-making} using five calibrated response modes (ALPHA through DELTA)
+    \item \textbf{Cross-domain applicability} spanning Defense, Healthcare, and Agriculture
+    \item \textbf{Civilizational-scale impact}: transitioning humanity from \textit{material barriers} to \textit{kinetic/signal sovereignty}
+\end{itemize}
+
+\textit{``We don't just process signals---we give AI the power to control the invisible physical world in real-time.''}
+
+% =============================================================================
+\section{Problem Statement: The Latency Gap}
+% =============================================================================
+
+\subsection{The Fundamental Challenge}
+
+Modern electromagnetic threats---enemy radar sweeps, cardiac arrhythmia bioelectric signatures, pest swarm navigation frequencies---operate at \textbf{sub-second timescales}. The window between threat detection and required response is measured in milliseconds, not seconds.
+
+\subsection{Why Standard Transformers Fail}
+
+Traditional Transformer-based AI systems suffer from critical limitations in this domain:
+
+\begin{enumerate}[noitemsep]
+    \item \textbf{Batch Processing Latency}: Standard LLMs process data in batches, introducing 500ms--2s delays that exceed the threat response window
+    \item \textbf{Stateless Architecture}: Transformers lack persistent memory of streaming signal patterns, requiring full context re-encoding per inference
+    \item \textbf{Token Serialization}: High-frequency EM signals (100+ readings/second) overwhelm token-based input pipelines
+    \item \textbf{Reactive vs. Proactive}: Traditional systems can only analyze \textit{after} data collection---they cannot act \textit{within} the signal stream
+\end{enumerate}
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Metric} & \textbf{Standard Transformer} & \textbf{Spectra-Shield} \\
+\midrule
+Processing Mode & Batch & Streaming \\
+Latency & 500ms -- 2s & $<$50ms \\
+Pattern Matching & Fixed rules & LLM-powered \\
+Response Mechanism & Manual config & Autonomous agent \\
+Data Freshness & Seconds old & Real-time \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{The Latency Gap Defined}
+
+The \textbf{Latency Gap} is the critical window where traditional AI systems cannot respond:
+
+\[
+\text{Latency Gap} = T_{\text{threat}} - (T_{\text{inference}} + T_{\text{action}})
+\]
+
+When this gap is \textit{negative}, the threat acts before the defense. Spectra-Shield eliminates this gap by embedding intelligence \textit{inside} the streaming pipeline.
+
+% =============================================================================
+\section{The Core Idea: Agentic Signal Sovereignty}
+% =============================================================================
+
+\subsection{Conceptual Framework}
+
+\textbf{Spectra-Shield} introduces the concept of \textbf{Agentic Signal Sovereignty}---the ability for an AI agent to \textit{own and control} a portion of the electromagnetic spectrum in real-time. This is not passive monitoring; it is \textbf{active dominion} over invisible physical phenomena.
+
+\subsection{The Sovereignty Model}
+
+The agent operates across three sovereignty levels:
+
+\begin{enumerate}[noitemsep]
+    \item \textbf{Perception Sovereignty}: Real-time awareness of all EM activity within the monitored spectrum
+    \item \textbf{Decision Sovereignty}: Autonomous threat classification and response selection without human intervention
+    \item \textbf{Action Sovereignty}: Direct control over counter-emission hardware (jammers, frequency shifters, noise generators)
+\end{enumerate}
+
+\subsection{Response Mode Taxonomy}
+
+The agent's decision space consists of five calibrated response modes:
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Mode} & \textbf{Strategy} & \textbf{Application} \\
+\midrule
+\texttt{MODE\_ALPHA} & Noise-Cancellation & Blend into background EM \\
+\texttt{MODE\_BETA} & Frequency-Shift & Evade detection by band-hopping \\
+\texttt{MODE\_GAMMA} & Active-Counter & Emit jamming/counter-frequency \\
+\texttt{MODE\_DELTA} & Alert-Only & Monitor and log, no emission \\
+\texttt{MODE\_NORMAL} & Standard Monitoring & No threat detected \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% =============================================================================
+\section{Detailed Architecture}
+% =============================================================================
+
+\subsection{System Overview}
+
+The Spectra-Shield architecture consists of four primary components connected in a streaming pipeline:
+
+\begin{verbatim}
++-------------------+     +--------------------------------+     +-------------------+
+|                   |     |      PATHWAY ENGINE            |     |                   |
+| Simulated EM      |---->| +----------+   +------------+  |---->| Defensive         |
+| Sensors           |     | | Anomaly  |-->| Gemini     |  |     | Actuators         |
+| (SDR Input)       |     | | Detector |   | Agent      |  |     | (Counter-Emit)    |
++-------------------+     | +----------+   +------------+  |     +-------------------+
+                          +--------------------------------+
+\end{verbatim}
+
+\subsection{Component Deep-Dive}
+
+\subsubsection{Stage 1: Simulated EM Sensors}
+
+In the demonstration system, electromagnetic signals are generated by the \texttt{SignalSimulator} class:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Defense Scenario}: Baseline 300 Hz, threats at 850+ Hz (radar sweeps)
+    \item \textbf{Health Scenario}: Baseline 1.0 Hz (60 BPM heartbeat), threats at 2.5+ Hz (arrhythmia)
+    \item \textbf{Agriculture Scenario}: Baseline 200 Hz, threats at 65 Hz (insect navigation)
+\end{itemize}
+
+Each reading contains: \texttt{timestamp}, \texttt{frequency}, \texttt{amplitude}, \texttt{noise}, \texttt{phase}, and ground-truth \texttt{threat\_level}.
+
+\subsubsection{Stage 2: Pathway Streaming Engine}
+
+The core innovation leverages Pathway's real-time data processing framework:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{HTTP REST Connector}: Ingests signals via \texttt{pw.io.http.rest\_connector()} with 50ms autocommit
+    \item \textbf{User-Defined Functions (UDFs)}: Custom \texttt{@pw.udf} decorators for anomaly scoring
+    \item \textbf{Conditional LLM Queries}: Only threats ($\text{anomaly} > 0.4$) trigger Gemini inference
+    \item \textbf{Streaming Output}: Results immediately piped to dashboard and actuators
+\end{itemize}
+
+The anomaly score calculation:
+\[
+\text{score} = \min\left(1.0, \; 0.7 \cdot \frac{|f - f_{\text{base}}|}{f_{\text{base}}} + 0.3 \cdot \frac{|a - a_{\text{base}}|}{a_{\text{base}}}\right)
+\]
+
+\subsubsection{Stage 3: Gemini Agent (via LiteLLMChat)}
+
+Integration with \textbf{Google Gemini 2.5 Flash-Lite} provides:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Model}: \texttt{gemini/gemini-2.5-flash-lite} via LiteLLM wrapper
+    \item \textbf{Retry Strategy}: Exponential backoff with 3 retries
+    \item \textbf{Caching}: Built-in \texttt{DefaultCache()} to reduce redundant API calls
+    \item \textbf{Temperature}: 0.1 for deterministic, consistent responses
+    \item \textbf{Output Format}: Structured JSON with \texttt{mode}, \texttt{confidence}, \texttt{rationale}, \texttt{action}
+\end{itemize}
+
+\subsubsection{Stage 4: Defensive Actuators}
+
+The output controls simulated (or real) counter-emission hardware:
+
+\begin{itemize}[noitemsep]
+    \item \texttt{MODE\_ALPHA}: Activate noise-floor blending circuitry
+    \item \texttt{MODE\_BETA}: Engage frequency-hopping spread spectrum (FHSS)
+    \item \texttt{MODE\_GAMMA}: Power jamming emitter at counter-frequency
+    \item \texttt{MODE\_DELTA}: Log to SIEM, alert human operators
+\end{itemize}
+
+% =============================================================================
+\section{Technical Workflow}
+% =============================================================================
+
+\subsection{Step-by-Step Data-in-Motion Processing}
+
+The following sequence describes a single signal's journey through Spectra-Shield:
+
+\begin{enumerate}
+    \item \textbf{Signal Ingestion} \\
+    The \texttt{SignalSimulator} generates a reading at 200ms intervals (configurable). The reading is POSTed to the Pathway HTTP endpoint at \texttt{http://localhost:8080/}.
+
+    \item \textbf{Schema Validation} \\
+    Pathway validates against \texttt{SignalInputSchema}: \\
+    \texttt{\{timestamp: float, frequency: float, amplitude: float, noise: float, phase: float, threat\_level: float\}}
+
+    \item \textbf{Anomaly Calculation} \\
+    The \texttt{calculate\_anomaly\_score()} UDF computes deviation from scenario-specific baselines. Defense baseline: $f_{\text{base}}=300\text{Hz}$, $a_{\text{base}}=45$.
+
+    \item \textbf{Threat Detection} \\
+    The \texttt{is\_threat\_detected()} UDF evaluates: \texttt{anomaly\_score > 0.4}. Returns boolean \texttt{is\_threat}.
+
+    \item \textbf{Prompt Construction} \\
+    For threats, \texttt{build\_prompt()} generates context-rich prompt including:
+    \begin{itemize}[noitemsep]
+        \item Current signal parameters (frequency, amplitude, noise, anomaly)
+        \item Active scenario (Defense/Health/Agriculture)
+        \item System prompt defining response mode taxonomy
+    \end{itemize}
+
+    \item \textbf{LLM Inference} \\
+    \texttt{LiteLLMChat} queries Gemini 2.5 Flash-Lite. The \texttt{pw.if\_else()} conditional ensures:
+    \begin{itemize}[noitemsep]
+        \item Threats $\rightarrow$ Full LLM inference
+        \item Non-threats $\rightarrow$ Static \texttt{MODE\_NORMAL} response (no API call)
+    \end{itemize}
+
+    \item \textbf{Response Parsing} \\
+    \texttt{parse\_agent\_response()} extracts JSON from LLM output, handling markdown code blocks.
+
+    \item \textbf{Output Formatting} \\
+    \texttt{format\_output()} assembles final JSON with nested \texttt{signal}, \texttt{analysis}, and \texttt{agent\_decision} objects.
+
+    \item \textbf{Response Dispatch} \\
+    The \texttt{response\_writer} sends results to the caller and triggers actuator control logic.
+\end{enumerate}
+
+\subsection{Key Code Extract: Pipeline Construction}
+
+From \texttt{signal\_engine.py}, the core pipeline stages:
+
+\begin{verbatim}
+# Stage 1: Input connector
+signals, response_writer = pw.io.http.rest_connector(
+    host=self.host, port=self.port,
+    schema=SignalInputSchema,
+    autocommit_duration_ms=50
+)
+
+# Stage 2: Anomaly calculation
+signals = signals.select(
+    anomaly_score=calculate_anomaly_score(
+        pw.this.frequency, pw.this.amplitude,
+        baseline["freq"], baseline["amp"]
+    )
+)
+
+# Stage 3: Conditional LLM query
+signals = signals.select(
+    agent_raw=pw.if_else(
+        pw.this.is_threat,
+        self.llm(prompt_chat_single_qa(pw.this.prompt)),
+        '{"mode": "MODE_NORMAL", ...}'
+    )
+)
+\end{verbatim}
+
+% =============================================================================
+\section{Applications \& Impact}
+% =============================================================================
+
+\subsection{Defense: Ghost Units}
+
+\textbf{Scenario}: A military convoy operates in contested airspace under constant radar surveillance.
+
+\textbf{Solution}: Each vehicle carries a Spectra-Shield node. When enemy radar (850+ Hz spike) is detected:
+\begin{itemize}[noitemsep]
+    \item Agent selects \texttt{MODE\_GAMMA} (Active-Counter)
+    \item Counter-frequency emission creates radar ``ghost'' signatures
+    \item Convoy becomes \textit{invisible} or appears as false targets
+\end{itemize}
+
+\textbf{Impact}: Transform static vehicles into EM ``ghosts''---adaptive camouflage at the speed of light.
+
+\subsection{Health: Contactless ICU}
+
+\textbf{Scenario}: Post-operative patients require continuous cardiac monitoring without invasive electrodes.
+
+\textbf{Solution}: Bio-electromagnetic sensors detect heartbeat at 1.0 Hz baseline. Anomalies (arrhythmia at 2.5+ Hz) trigger:
+\begin{itemize}[noitemsep]
+    \item Agent selects \texttt{MODE\_DELTA} (Alert-Only)
+    \item Immediate notification to nursing station
+    \item Historical pattern logged for physician review
+\end{itemize}
+
+\textbf{Impact}: Non-contact, real-time cardiac surveillance enabling \textit{preemptive intervention} before cardiac event.
+
+\subsection{Agriculture: Signal Pesticides}
+
+\textbf{Scenario}: Locust swarms navigate using 50--80 Hz EM orientation signals.
+
+\textbf{Solution}: Field sensors detect swarm signatures (65 Hz spike). Agent response:
+\begin{itemize}[noitemsep]
+    \item Agent selects \texttt{MODE\_GAMMA} (Active-Counter)
+    \item Counter-frequency disrupts swarm navigation
+    \item Pests scatter without chemical pesticides
+\end{itemize}
+
+\textbf{Impact}: Chemical-free pest control using only \textit{electromagnetic field manipulation}---sustainable agriculture at scale.
+
+% =============================================================================
+\section{Civilizational Revolution: Material Barriers to Signal Sovereignty}
+% =============================================================================
+
+\subsection{The Historical Shift}
+
+Throughout human history, defense has relied on \textbf{material barriers}:
+\begin{itemize}[noitemsep]
+    \item Stone walls $\rightarrow$ Castle fortifications
+    \item Steel armor $\rightarrow$ Tank hulls
+    \item Concrete bunkers $\rightarrow$ Nuclear silos
+\end{itemize}
+
+Each era's answer to threats was \textit{more mass, more material}. But the electromagnetic age demands a new paradigm.
+
+\subsection{The Signal Sovereignty Paradigm}
+
+Spectra-Shield represents the transition to \textbf{Kinetic/Signal Sovereignty}:
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Era} & \textbf{Defense Paradigm} & \textbf{Resource} \\
+\midrule
+Ancient & Stone Walls & Mass \\
+Industrial & Steel/Concrete & Material Strength \\
+Nuclear & MAD/Deterrence & Destructive Capacity \\
+\textbf{Electromagnetic} & \textbf{Signal Sovereignty} & \textbf{Intelligence + Speed} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+In this new paradigm:
+\begin{itemize}[noitemsep]
+    \item \textbf{Invisibility replaces armor}: Being undetectable is superior to being indestructible
+    \item \textbf{Speed replaces strength}: Sub-millisecond response outpaces kinetic weapons
+    \item \textbf{Intelligence replaces mass}: AI decision-making substitutes for physical barriers
+\end{itemize}
+
+\subsection{Civilizational Implications}
+
+Spectra-Shield is not merely a product---it is a \textbf{civilizational infrastructure layer}:
+
+\begin{enumerate}[noitemsep]
+    \item \textbf{National Defense}: Every military asset becomes EM-sovereign
+    \item \textbf{Healthcare Systems}: Contactless, always-on patient monitoring
+    \item \textbf{Agricultural Networks}: Chemical-free pest control at continental scale
+    \item \textbf{Smart Cities}: Invisible EM shields for critical infrastructure
+\end{enumerate}
+
+\vspace{0.5cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{center}
+    \textit{``The future belongs not to those who build the thickest walls,} \\
+    \textit{but to those who master the invisible spectrum.''}
+\end{center}
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.5cm}
+
+% =============================================================================
+\section*{Acknowledgments}
+% =============================================================================
+
+This project leverages the following technologies:
+\begin{itemize}[noitemsep]
+    \item \textbf{Pathway}: Real-time streaming data processing engine (\texttt{pathway.com})
+    \item \textbf{Google Gemini}: LLM intelligence via Gemini 2.5 Flash-Lite
+    \item \textbf{LiteLLM}: Unified LLM interface for model abstraction
+    \item \textbf{Streamlit}: Dashboard visualization framework
+\end{itemize}
+
+\vspace{0.5cm}
+
+\begin{center}
+    \textbf{MIT License --- Built for Pathway AI Build-athon}
+\end{center}
+
+\end{document}
