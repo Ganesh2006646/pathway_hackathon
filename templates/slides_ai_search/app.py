@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Copyright © 2024 Pathway
+# Copyright © 2026 Pathway
 
 # Copied and adapted from templates/slides_ai_search/app.py
 # To use advanced features with Pathway Scale, get your free license key from
